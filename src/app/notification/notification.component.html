@@ -1,0 +1,30 @@
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+<h1 style="text-align:center">Notifications list</h1>
+<div class="container">
+    <table class="table table-bordered tabl-stripped table-hover">
+        <thead class="thead-dark">
+            <tr class="bg-info text-white">
+                <th scope="col" style="text-align:center;font-size: 22px;width:10%;">Date</th>
+                <th scope="col" style="text-align:center;font-size: large;width:50%;">Notification Title</th>
+                <th scope="col" style="text-align:center;font-size: large;width:30%;">Link</th>
+            </tr>
+        </thead>
+        <tbody style="background-color: azure;">
+            <tr *ngFor='let notification of Notifications'>
+                <td style="font-size: 20px;">{{notification.title | slice: 0:10}}</td>
+                <td style="font-size: 20px;">{{notification.title| slice:11}}</td>
+                <td style="font-size: 20px;"><a href="{{notification.link}}">{{notification.link| slice:11}}</a>
+                </td>
+
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+

@@ -39,23 +39,6 @@ a:hover{
     opacity: 0.3;
     z-index: -1;
 }
-.navbar:before{
-    content: "";
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to right, #1e5799 0%);
-    opacity: 0.3;
-    z-index: -1;
-
-}
-.nav-item a{
-    color:black !important;
-    font-weight: bold;
-    font-size: 16px;
-}
 .header-section{
     width: 100%;
     height: inherit;
@@ -69,15 +52,10 @@ a:hover{
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%,-250%);
-    -ms-transform: translate(-50%,-250%);
-    -webkit-transform: translate(-50%,-250%);}
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);}
 
-.navbar-brand{
-    color: white;
-    font-weight: 400;
-    font-size: 2rem;
-}
 .header-buttons a{
     border: 1px solid #fff ;
     border-radius: 100px;

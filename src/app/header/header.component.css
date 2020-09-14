@@ -1,0 +1,15 @@
+.nav-item a{
+    color:black !important;
+    font-weight: bold;
+    font-size: 16px;
+    padding:15px;
+}
+.navbar-brand{
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.nav-item a :hover{
+    color: blue;
+}
