@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HospitalComponent } from './hospital/hospital.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './filter.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoot: Routes = [{path: '', component:MainpageComponent},
                           {path: 'home', component:MainpageComponent},
@@ -29,7 +30,8 @@ const appRoot: Routes = [{path: '', component:MainpageComponent},
     NotificationComponent,
     HospitalComponent,
     DashboardComponent,
-    FilterPipe
+    FilterPipe,
+    FooterComponent
 
   ],
   imports: [
