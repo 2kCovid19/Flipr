@@ -13,12 +13,14 @@ import { HospitalComponent } from './hospital/hospital.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './filter.pipe';
 import { FooterComponent } from './footer/footer.component';
+import { GraphsComponent } from './graphs/graphs.component';
 
 const appRoot: Routes = [{path: '', component:MainpageComponent},
                           {path: 'home', component:MainpageComponent},
                          {path: 'helpline',component: HelplineComponent},
                          {path: 'notifications',component: NotificationComponent},
                          {path: 'dashboard', component:DashboardComponent},
+                         {path: 'graph', component:GraphsComponent},
                          {path: 'hospital', component:HospitalComponent}]
 
 @NgModule({
@@ -31,7 +33,8 @@ const appRoot: Routes = [{path: '', component:MainpageComponent},
     HospitalComponent,
     DashboardComponent,
     FilterPipe,
-    FooterComponent
+    FooterComponent,
+    GraphsComponent
 
   ],
   imports: [
